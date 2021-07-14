@@ -4,19 +4,46 @@
 /* Common styles and utilities */
 body{
     font-family: 'Poppins', sans-serif;
+    margin: 0px;
+}
+p{
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 200;
+    text-align: justify;
+
+}
+.player-name{
+    font-size: 25px;
+    
+}
+h1{
+    font-size: 55px;
+    line-height: 15px;
 }
 /* All styles are available here */
 
+.container{
+    background-color: #2D25A0;
+    width: 1355px;
+    height: 500px;
+}
 .header-section{
-    background-color:#2D25A0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.header-section:hover img{
+    transform: scale(1.2);
 }
 .text-section{
+    width: 487px;
+    height: 320px;
+    background: 2px solid lightcoral;
     color: white;
-    margin: 20px;
-    line-height: 30px;
+    padding-left: 150px;
+
 }
 .watch-button{
     text-decoration: none;
@@ -27,13 +54,37 @@ body{
     font-weight: 700;
 }
 .image-section{
-    width: 556px;
-    height: 438px;
+    width: 500px;
+    height: 400px;
+    margin-top: 40px;
 }
 .image-section img{
-    width: 60%;
-    margin: 107px 240px 132px;
+    width: 100%;
 }
+/* Middle section Photo frame */
+.players-album{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);    
+    justify-content: center;
+    align-items: center;
+    margin:60px 10px 20px 100px;
+    border: 20px;
+}
+.players-frame{
+    width:300px;
+    height:540px;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.player-photo img{
+    width: 100%;
+    border-radius: 10px;
+}
+/* Footer section */
 .footer-section{
     width: 483px;
     height: 213px;
@@ -53,3 +104,4 @@ body{
     align-items: flex-start;
     margin-right: 10px;
 }
+
